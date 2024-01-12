@@ -9,12 +9,7 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    /* Add other styles for smaller screens here */
-  }
-}
+
 
 /* styling body */
 /*Add margin, padding, and border to the body.*/
