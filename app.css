@@ -1,22 +1,10 @@
 
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-}
-
-
-
 /*Use border-box in all elements.*/
-
 * {
     box-sizing: border-box;
 }
-
-
-
 /* styling body */
 /*Add margin, padding, and border to the body.*/
-
 body {
     font-family: "monaco" , Helvetica;                     /* set text style */
     font-size: 15px;                                       /* set size of the letters */
@@ -25,40 +13,28 @@ body {
      line-height: 2;                                        /* set the line height  */
      margin: 2.3rem ;                                       /* added margin  */
      padding: 2.3rem ;                                      /* added padding  */
-     border: 2px solid #0752df ;                          /* added border  */ 
-     
-    
+     border: 2px solid #0752df ;                          /* added border  */     
 }
-
-
 a {
     color: #3087fa;                                      /* set link color */        
     text-decoration: none;                                 /* removing the underline from the links */
 }
-
 ::placeholder {
     color: #0752df;
 }
-
 /* Styling the main heading */
-   
-
-
 h1 {
     
     font-size: 2.5rem;                                    /* set font size for h1 */
     text-align: center;                                   /* aligned h1 to the center  */ 
     text-shadow: 3px 3px 5px rgba(39, 243, 233, 0.534);      /* set the text shadow */   
 }
-
-
     /* Styling the h2 */
 h2 {
     font-size: 1.8rem;                                      /* Set font size for h2 */
     font-weight: 600;                                       /* Made it slightly bolder */
     text-transform: uppercase;                              /* Convert text to uppercase for visual prominence */
 }
-
    /* Styling the h3 */
 h3 {
        font-size: 1.4rem;                                      /* Set font size for h3 */
@@ -70,37 +46,28 @@ header section
   justify-content: space-between; /* set space between text in the  header section. */
   height: 20rem;
 }
-
 /* Separate sections with margins to utilize collapsing margins. Also, use borders to space them apart. Observe the behavior.*/
 main section,  footer section
- {
-    
+ {   
     margin: 4rem 0;
     border-top: solid  1.5px  #0752df;  
 }
-
 /*Apply padding below headers to provide spacing .*/
 h1, h2, h3 {
-    padding-bottom: 1.5rem;
-    
+    padding-bottom: 1.5rem;    
 }
-
 /*Adjust form elements to capture the same look and feel.*/
-
 form input, form textarea, form select{
     padding: 0.1rem 0.2rem;
     color: #0752df;
     border: 2px dotted #0752df;
-    background-color: black;
-    
+    background-color: black;   
 }
-
 /* Remove outlines from form elements, ensuring a cleaner look. */
 form input, form textarea
 {
   outline: none;
 }
-
 /*removed the border from the fieldset*/
 form fieldset
 {
@@ -108,40 +75,31 @@ form fieldset
     padding: 0;
     border: none;
 }
-
 header section .image-container 
 {
   align-self: flex-start; /* Positions photo to the top left. */
-
-
   width: 13rem; /*set the image size*/
   height: 13rem;
 }
-
 header section .image-container img
 {
   display: block;
-
   /* Fits the image into the container div. */
   width: 100%;
   height: 100%;
   border: dotted 2px; /*made the picture border dotted*/
   border-radius: 50%; /* Rounds the image. */
-
   object-fit: cover; /* Preserves the original aspect ratio. */
   object-position: 100% 50%; /* Makes the face visible moving the image down. */
 }
-
 header section .name-container
 {
   align-self: center;  /* Positions the name container in the center  */
 }
-
 header section .information-container
 {
   align-self: flex-end; /* Positions information container on the  bottom right */
 }
-
  /*Technologies  */
 .technologies .container
 {
@@ -154,63 +112,45 @@ header section .information-container
   display: flex;
   justify-content: center; /* position sections in the center */
 }
-
-
-
 /* Styling the paragraphs */
 p, li, table, form
    {
     font-size: 1rem;        /* set the font size for paragraphs*/
 }
-
-
 .contact .text-input-container,
 .contact .select-container,
 .contact .checkbox-container
 {
   display: flex;
   width: 30rem;     /*positioning form containers close to each other */
-  margin-bottom: 1rem;
-  
-  
+  margin-bottom: 1rem;   
 }
-
 .contact .text-input-container input,
 .contact .text-input-container textarea,
 .contact .select-container select
-{
-    
+{    
   width: 20rem;  /*set the width on text input*/
 }
-
 .contact .text-input-container label,
 .contact .select-container label
-{
-    
-  flex-grow: 3; /* set the text input container on flex grow*/
-  
+{    
+  flex-grow: 3; /* set the text input container on flex grow*/  
 }
-
-
 .contact .text-input-container textarea
 {
-  height: 10rem;  /* set the height for message) textarea  */
-  
+  height: 10rem;  /* set the height for message) textarea  */ 
 }
-
 .contact .form-container
 {
   display: flex;
   align-items: center;    /*positioning form containers in the center */
   flex-direction: column;
 }
-
 .message-container
 {
   margin-top: 7rem;
   text-align: end; /*set the message container on the project on the right end */
 }
-
 form button
 {
   padding: 0.5rem 1rem;  /*set the padding for the buttons*/
@@ -218,30 +158,15 @@ form button
   border: 2px solid #0752df; /*/*set the border and color  for buttons*/
   background-color: black; /* set the background color for buttons*/
 }
-
-
-
-
 .contact .button-container
 {
   display: flex;
   justify-content: flex-end; /*position buttons on the right*/
 }
-
 .contact .button-container button[type=reset]
 {
   margin-right: 1rem;  /*positioning reset button close to submit button*/
 }
-
-
-
-
-
-
-
-
-
-
 /* This was my first project using Cascading stylesheets  */
 
 
