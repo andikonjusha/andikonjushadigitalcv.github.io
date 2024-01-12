@@ -167,6 +167,68 @@ form button
 {
   margin-right: 1rem;  /*positioning reset button close to submit button*/
 }
+
+/*Adapting my digital cv for smaller screens*/
+@media only screen and (max-width: 680px) { /*Set max width to 730 because under 730 my portrait image shrinks,technology and contact fit well */
+  body {
+    font-size: 14px;
+    margin: 1rem;
+    padding: 1rem;
+    align-self: auto;
+  }
+/*Adjusted font size of h1,h2,h3 for smaller screens */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+   
+  
+  main section,
+footer section {
+  margin: 2rem 0; /* Adjusted margin of main section and footer for smaller screens */
+}
+/*adujst header section  on auto height and column*/
+  header section {
+    height: auto;
+    flex-direction: column;
+  }
+    /*positioning image,name,information on center  of header section for smaller screens*/
+  header section .image-container,
+  header section .name-container,
+  header section .information-container {
+    align-self: center;
+  }
+  /* adjusted auto and column of technologies section for smaller screens*/
+  .technologies .container {
+        align-self: auto;
+        flex-direction: column;
+    }
+    
+  /* adjusted width,align,flex direction  of the contact section for smaller devices*/
+
+  .contact .text-input-container,
+  .contact .select-container,
+  .contact .checkbox-container 
+  {
+    
+    width: auto;
+    align-self: auto;
+    flex-direction: column;
+  }
+   
+/*Set hover for buttons*/
+  form button:hover {
+    background-color: #0a3559;
+    transform: scale(1.1);    /* Scale up the hover */
+  }
+}
 /* This was my first project using Cascading stylesheets  */
 
 
